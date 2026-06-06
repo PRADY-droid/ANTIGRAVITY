@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aura Cyber - Interactive Developer & Designer Portfolio. Showcasing premium web experiences, mobile applications, and visual arts.">
+  <title>Aura Cyber | Interactive Developer & Designer Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div id="custom-cursor"></div>
+  <div id="custom-cursor-dot"></div>
+  <!-- Background Effects -->
+  <canvas id="canvas-bg"></canvas>
+  <div class="blur-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+  <!-- Header / Navigation -->
+  <header id="main-header">
+    <div class="header-container">
+      <a href="#home" class="logo">
+        <span class="logo-accent">AURA</span>CYBER
+      </a>
+      
+      <nav id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <a href="#contact" class="btn btn-outline btn-sm">Let's Talk</a>
+        <button id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge">Available for Freelance & Full-time</div>
+          <h1 class="hero-title">
+            Crafting Digital <br>
+            <span class="text-gradient">Experiences</span> that Flow
+          </h1>
+          <p class="hero-subtitle">
+            I'm a hybrid developer & designer specializing in building highly interactive, beautiful, and performant interfaces that bridge the gap between imagination and execution.
+          </p>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">Explore My Work <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <!-- Glassmorphic Dashboard Card -->
+          <div class="glass-card visual-card">
+            <div class="card-header">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="card-title-tab">aura_system.config</div>
+            </div>
+            <div class="card-body">
+              <pre class="code-editor"><code><span class="code-keyword">const</span> developer = {
+  name: <span class="code-string">'Aura Cyber'</span>,
+  skills: [<span class="code-string">'React'</span>, <span class="code-string">'WebGl'</span>, <span class="code-string">'CSS3'</span>, <span class="code-string">'Node'</span>],
+  focus: <span class="code-string">'Creative Frontend'</span>,
+  passion: <span class="code-string">'Interactive Systems'</span>
+};
+<span class="code-comment">// Tracking interactions...</span>
+monitor(developer.passion);</code></pre>
+              <div class="tech-radar-mock">
+                <div class="radar-circle"></div>
+                <div class="radar-sweep"></div>
+                <div class="radar-node node-1" data-label="React"></div>
+                <div class="radar-node node-2" data-label="WebGL"></div>
+                <div class="radar-node node-3" data-label="UX"></div>
+                <div class="radar-node node-4" data-label="CSS"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-desc">Get to know my background, technical expertise, and core philosophy.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-info">
+            <h3 class="about-subheading">Solving complex problems with elegant code & beautiful aesthetics.</h3>
+            <p>
+              I believe that websites should not just be spreadsheets in a browser; they should be immersive journeys. My approach combines robust engineering practices with a keen eye for visual storytelling.
+            </p>
+            <p>
+              Over the past 5 years, I've designed and engineered high-performance interfaces, working with startups and creative design studios to turn complex wireframes into intuitive, interactive experiences.
+            </p>
+            <div class="info-metrics">
+              <div class="metric-item">
+                <span class="metric-num">5+</span>
+                <span class="metric-label">Years Exp.</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-num">30+</span>
+                <span class="metric-label">Projects Done</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-num">100%</span>
+                <span class="metric-label">Clients Happy</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-tabs-container glass-card">
+            <div class="tabs-nav">
+              <button class="tab-btn active" data-tab="skills">Skills</button>
+              <button class="tab-btn" data-tab="experience">Experience</button>
+              <button class="tab-btn" data-tab="education">Education</button>
+            </div>
+            
+            <div class="tabs-content">
+              <!-- Skills Tab -->
+              <div class="tab-pane active" id="skills">
+                <div class="skills-grid">
+                  <div class="skill-category">
+                    <h4>Frontend</h4>
+                    <div class="skill-tags">
+                      <span class="tag">HTML5 / CSS3</span>
+                      <span class="tag">JavaScript (ES6+)</span>
+                      <span class="tag">TypeScript</span>
+                      <span class="tag">React / Next.js</span>
+                      <span class="tag">Three.js / Canvas</span>
+                    </div>
+                  </div>
+                  <div class="skill-category">
+                    <h4>Design & UI</h4>
+                    <div class="skill-tags">
+                      <span class="tag">Figma</span>
+                      <span class="tag">UI/UX Design</span>
+                      <span class="tag">Motion Graphics</span>
+                      <span class="tag">Vector Art</span>
+                      <span class="tag">Typography</span>
+                    </div>
+                  </div>
+                  <div class="skill-category">
+                    <h4>Tools & Dev</h4>
+                    <div class="skill-tags">
+                      <span class="tag">Git & GitHub</span>
+                      <span class="tag">Node.js / Express</span>
+                      <span class="tag">RESTful APIs</span>
+                      <span class="tag">Webpack / Vite</span>
+                      <span class="tag">Performance Opt.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Experience Tab -->
+              <div class="tab-pane" id="experience">
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <span class="time-period">2024 - Present</span>
+                    <h4 class="role-title">Senior Creative Engineer</h4>
+                    <h5 class="company-name">Aether Creative Studio</h5>
+                    <p class="role-desc">Architecting interactive digital products, leading web animations design, and optimizing front-end assets for load speeds.</p>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="time-period">2022 - 2024</span>
+                    <h4 class="role-title">Frontend Developer</h4>
+                    <h5 class="company-name">NovaTech Solutions</h5>
+                    <p class="role-desc">Built modular responsive web applications in React. Closely collaborated with the product UI team to implement pixel-perfect features.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Education Tab -->
+              <div class="tab-pane" id="education">
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <span class="time-period">2018 - 2022</span>
+                    <h4 class="role-title">B.Sc. in Computer Science</h4>
+                    <h5 class="company-name">Apex University</h5>
+                    <p class="role-desc">Focused on Human-Computer Interaction, Interactive Computer Graphics, and Software Architecture patterns.</p>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="time-period">2021</span>
+                    <h4 class="role-title">Interaction Design Certificate</h4>
+                    <h5 class="company-name">Interaction Design Foundation</h5>
+                    <p class="role-desc">Specialized in User Experience mapping, prototyping fidelity, and usability audits.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Work Section -->
+    <section id="work" class="work-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Work</h2>
+          <p class="section-desc">Explore a selection of recent designs and frontend engineering creations.</p>
+        </div>
+        <!-- Filter Controls -->
+        <div class="filter-controls">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="design">UI/UX Design</button>
+        </div>
+        <!-- Project Grid -->
+        <div class="project-grid">
+          <!-- Project 1 -->
+          <div class="project-card glass-card" data-category="web" 
+               data-title="Aether SaaS Dashboard"
+               data-tag="SaaS Analytics"
+               data-img="images/project1.png"
+               data-desc="A premium cloud dashboard featuring real-time telemetry, glassmorphic analytics panels, interactive charts, and rich data tables. Built with advanced layout APIs and responsive performance optimizations."
+               data-tech="React, Tailwind, ChartJS, CSS Grid"
+               data-link="#">
+            <div class="project-img-wrapper">
+              <img src="images/project1.png" alt="Aether SaaS Dashboard Mockup" loading="lazy">
+              <div class="project-overlay">
+                <span class="view-btn"><i class="fa-solid fa-expand"></i></span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">SaaS Analytics</span>
+              <h3 class="project-title">Aether SaaS Dashboard</h3>
+              <a href="#" class="project-link-btn">View Details <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="project-card glass-card" data-category="mobile"
+               data-title="Krypton Crypto Mobile"
+               data-tag="Mobile Finance"
+               data-img="images/project2.png"
+               data-desc="A sleek mobile UI design concept for a modern crypto wallet. Features highly structured assets overview, real-time market tracker, custom glowing asset trends and interactive glassmorphic transaction inputs."
+               data-tech="Flutter, Figma, Dart, Framer Motion"
+               data-link="#">
+            <div class="project-img-wrapper">
+              <img src="images/project2.png" alt="Krypton Crypto Mobile App Mockup" loading="lazy">
+              <div class="project-overlay">
+                <span class="view-btn"><i class="fa-solid fa-expand"></i></span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">Mobile Finance</span>
+              <h3 class="project-title">Krypton Crypto Mobile</h3>
+              <a href="#" class="project-link-btn">View Details <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="project-card glass-card" data-category="design"
+               data-title="Aura Cyber Headphone Visualizer"
+               data-tag="3D Customizer"
+               data-img="images/project3.png"
+               data-desc="A futuristic 3D product visualizer that allows users to interactively customize earcup finishes, LED ring accents, cable structures, and headband materials. Includes custom smooth canvas shading animations."
+               data-tech="Three.js, WebGL, CSS Modules, GSAP"
+               data-link="#">
+            <div class="project-img-wrapper">
+              <img src="images/project3.png" alt="Aura Cyber Headphone Visualizer Mockup" loading="lazy">
+              <div class="project-overlay">
+                <span class="view-btn"><i class="fa-solid fa-expand"></i></span>
+              </div>
+            </div>
+            <div class="project-info">
+              <span class="project-tag">3D Customizer</span>
+              <h3 class="project-title">Aura Headphone Visualizer</h3>
+              <a href="#" class="project-link-btn">View Details <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-desc">Have an interesting project or want to collaborate? Send a message.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-sidebar">
+            <h3 class="contact-heading">Let's build something remarkable together.</h3>
+            <p>I am currently open to new contract and full-time opportunities. Drop me an email, or find me on my social media channels.</p>
+            
+            <ul class="contact-info-list">
+              <li>
+                <div class="contact-icon-box glass-card">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <span class="label">Email Me</span>
+                  <a href="mailto:hello@auracyber.dev" class="val">hello@auracyber.dev</a>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon-box glass-card">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <span class="label">Location</span>
+                  <span class="val">San Francisco, CA (Remote)</span>
+                </div>
+              </li>
+            </ul>
+            <div class="social-links">
+              <a href="#" class="social-icon glass-card" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="social-icon glass-card" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon glass-card" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="social-icon glass-card" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+            </div>
+          </div>
+          <div class="contact-form-wrapper glass-card">
+            <form id="portfolio-contact-form" novalidate>
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="form-name">Your Name</label>
+                  <input type="text" id="form-name" name="name" required placeholder="John Doe">
+                  <span class="error-msg">Name is required</span>
+                </div>
+                <div class="form-group">
+                  <label for="form-email">Your Email</label>
+                  <input type="email" id="form-email" name="email" required placeholder="john@example.com">
+                  <span class="error-msg">Enter a valid email address</span>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" name="subject" required placeholder="Collaboration Inquiry">
+                <span class="error-msg">Subject is required</span>
+              </div>
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                <span class="error-msg">Message cannot be empty</span>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Send Message <i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer id="main-footer">
+    <div class="container footer-container">
+      <p class="copyright">&copy; 2026 Aura Cyber. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="scroll-top-btn" class="glass-card" aria-label="Scroll to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+  </footer>
+  <!-- Project Details Dialog -->
+  <dialog id="project-details-dialog" class="glass-card">
+    <div class="dialog-content">
+      <button class="dialog-close-btn" aria-label="Close dialog"><i class="fa-solid fa-xmark"></i></button>
+      <div class="dialog-layout">
+        <div class="dialog-visual">
+          <img id="dialog-img" src="" alt="Project Visual Preview">
+        </div>
+        <div class="dialog-details">
+          <span id="dialog-tag" class="project-tag">Tag</span>
+          <h3 id="dialog-title" class="dialog-title">Project Title</h3>
+          <p id="dialog-desc" class="dialog-desc">Detailed project description goes here...</p>
+          <div class="dialog-meta">
+            <h4>Technologies Used:</h4>
+            <p id="dialog-tech">React, Three.js, Canvas</p>
+          </div>
+          <div class="dialog-actions">
+            <a href="#" id="dialog-link" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+  <!-- Contact Success Dialog -->
+  <dialog id="success-dialog" class="glass-card mini-dialog">
+    <div class="dialog-content text-center">
+      <div class="success-icon">
+        <i class="fa-regular fa-circle-check"></i>
+      </div>
+      <h3>Message Sent!</h3>
+      <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+      <button id="success-dialog-close" class="btn btn-secondary btn-sm">Close</button>
+    </div>
+  </dialog>
+  <!-- Core JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
